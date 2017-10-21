@@ -145,6 +145,11 @@ class ApplyController extends Controller
 		/*
          *获取微信用户信息
          */
+		if(isset($_GET['gameid'])){
+			$gameid = $_GET['gameid'];		
+		}else{
+			$gameid = 1;
+		}
         $wxUserInfo = SysUtils::getValueBySessionKey('wxUserInfo');
         if(isset($wxUserInfo)){
             $unionid = $wxUserInfo['unionid'];
@@ -153,7 +158,7 @@ class ApplyController extends Controller
             return $this->redirect(UrlUtils::createUrl(["user/get-auth",'a'=>1,'gameid'=>$gameid]));
         }
 		$errorCode = 0;		
-        $user = UserService::getUserInfoByMarkId($openid,$unionid,$errorCode);
+        $user = UserService::getUserInfoByMarkId($openid,$unionid,$errorCode,$gameid);
 		$auditResult  = $user->getAgent();
         if($auditResult==0){            
              return $this->render('applyTips');
@@ -170,7 +175,6 @@ class ApplyController extends Controller
     /*
      * 跳转代理注册审核页面;
      */ 
-
     public function goAuditPage($msg){
 
         $title = "提示信息";
