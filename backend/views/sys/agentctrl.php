@@ -1,0 +1,61 @@
+<?php
+
+use yii\helpers\Html;
+use yii\helpers\Url;
+
+?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+<head>
+    <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" type="text/css" href="<?=Url::to('@web/css/easyui/default/easyui.css')?>" />
+    <link rel="stylesheet" type="text/css" href="<?=Url::to('@web/css/wu.css')?>" />
+    <link rel="stylesheet" type="text/css" href="<?=Url::to('@web/css/icon.css')?>" />
+    <!-- 引入js文件 -->
+    <script type="text/javascript" src="<?=Url::to('@web/js/jquery-1.8.0.min.js')?>"></script>
+    <script type="text/javascript" src="<?=Url::to('@web/js/easyui/jquery.easyui.min.js')?>"></script>
+    <script type="text/javascript" src="<?=Url::to('@web/js/easyui/locale/easyui-lang-zh_CN.js')?>"></script>
+    <?= Html::csrfMetaTags() ?>
+</head>
+<body>
+<div class="agentsearchbar">
+    <form style="width:330px;padding:10px 20px 10px 10px;">
+        <p style="font-size: 10pt;color:gray">昵&nbsp&nbsp&nbsp称: <input type="text"></p>
+        <p style="font-size: 10pt;color:gray">游戏ID: <input type="password"><input type="radio" name="ctrl" value="0">停封<input type="radio" name="ctrl" value="1">解封</p>
+        <div style="padding:5px;text-align:center;">
+            <a href="#" class="easyui-linkbutton">搜索</a>
+        </div>
+    </form>
+
+</div>
+<div class="agentbody">
+    <form style="width:330px;padding:0px 20px 10px 10px;">
+        <p style="font-size: 10pt;color:gray">代理商当前房卡: 33</p>
+        <p style="font-size: 10pt;color:gray">调整房卡数: <input type="text"></p>
+        <p style="font-size: 10pt;color:gray">代理商电话: <input type="text"></p>
+        <p style="font-size: 10pt;color:gray">代理商总房数: 3333</p>
+        <p style="font-size: 10pt;color:gray">代理商销售总金额数: 88333</p>
+        <p style="font-size: 10pt;color:gray">代理商下线人数: 33</p>
+        <div style="padding:5px;text-align:center;">
+                <a href="#" class="easyui-linkbutton">修改</a>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#win').window('open');
+
+
+
+
+
+    })
+
+
+    
+</script>
+
+</body>
+</html>

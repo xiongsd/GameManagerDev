@@ -1,0 +1,242 @@
+<?php
+namespace backend\controllers;
+
+use Yii;
+use yii\helpers\Url;
+use yii\web\Controller;
+use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+
+
+use common\models\SysUtils;
+use common\models\HttpUtils;
+
+use backend\models\SysService;
+
+use Manager\Cmd;
+use Head\NetMsg;
+use Manager\RegisterAgent;
+use Manager\B2M_GetRegisterAgent_Request;
+use Manager\M2B_GetRegisterAgent_Response;
+use Manager\B2M_GetRegisterAgentSize_Request;
+use Manager\M2B_GetRegisterAgentSize_Response;
+use Manager\B2M_ConfirmAgentRegister_Request;
+use Manager\M2B_ConfirmAgentRegister_Response;
+
+
+/**
+ * 实现布局显示等组件
+ */
+class SysController extends Controller
+{
+	public $enableCsrfValidation = false;
+
+	public function behaviors(){
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['welcome','get-on-line','get-hourse','agent-ctrl','notice-publish','Aagent-statistic','recharge','get-register-agent-list','agent-audit','go-agent-audit','notice-list','history-active-user-count','history-consume-card-count','history-new-user-count','history-recharge-usercount','history-recharge-money','history-room-count','get-liu-cun','rolling-notice','get-today-new-user'],
+                'rules' => [
+
+                    [
+                        'allow' => true,
+                        'actions' => ['welcome','get-on-line','get-hourse','agent-ctrl','notice-publish','Aagent-statistic','recharge','get-register-agent-list','agent-audit','go-agent-audit','notice-list','history-active-user-count','history-consume-card-count','history-new-user-count','history-recharge-usercount','history-recharge-money','history-room-count','get-liu-cun','rolling-notice','get-today-new-user'],
+                        'roles' => ['@']
+                    ],
+                ]
+            ]
+
+        ];
+
+    }
+
+	//显示欢迎页面;
+	public function actionWelcome(){
+		$this->layout = false;
+		return $this->render("welcome");
+
+	}
+    /**
+     * 显示在线用户页面
+     */
+    public function actionGetOnLine(){
+    	$this->layout = false;
+    	return $this->render("online");
+    }
+    /**
+     * 显示在线房间页面
+     */
+    public function actionGetHouse(){
+    	$this->layout = false;
+    	return $this->render("house");
+    }
+	/**
+     * 显示今日充值卡数
+     */
+    public function actionCardRechargeCount(){
+    	$this->layout = false;
+    	return $this->render("rechargestatistic");
+    }
+	/**
+     * 显示在线房间页面
+     */
+    public function actionRechargeMoney(){
+    	$this->layout = false;
+    	return $this->render("rechargemoney");
+    }
+/**
+     * 显示在线房间页面
+     */
+    public function actionRechargeUserCount(){
+    	$this->layout = false;
+    	return $this->render("rechargeusercount");
+    }
+	/**
+     * 显示今日新增用户
+     */
+    public function actionGetTodayNewUser(){
+    	$this->layout = false;
+    	return $this->render("todaynewuser");
+    }
+    //显示代理管理页面;
+    public function actionAgentCtrl(){
+    	$this->layout = false;
+    	return $this->render("agentctrl");
+    }
+   //显示活动发布页面;
+    public function actionNoticePublish(){
+        $this->layout = false;
+        return $this->render("noticepublish");
+    }   
+	//显示活动发布页面;
+    public function actionRollingNotice(){
+        $this->layout = false;
+        return $this->render("rollingnotice");
+    }
+    //显示代理统计页面;
+    public function actionAgentStatistic(){
+        $this->layout = false;
+        return $this->render("agentstatistic");
+    }
+	//显示代理充值页面;
+    public function actionRecharge(){
+        $this->layout = false;
+        return $this->render("recharge");
+    }
+    //获取代理审核页面;
+    public function actionGetRegisterAgentList(){
+       
+		$cmd = new Cmd();
+        $cmdCode = $cmd::CMD_B2M_GetRegisterAgent_Request;
+        /**
+         * 初始化请求;
+         */
+        $req = new B2M_GetRegisterAgent_Request();
+        $req->setPage($_GET['page']);        
+        // 制作消息对象
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        //发送消息;
+        $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
+        $resp = new M2B_GetRegisterAgent_Response();
+        $errorCode = 0;
+        HttpUtils::parseNetMsg($resp,$respMsgStream,$errorCode);
+		$rows = [];
+		foreach($resp->getRegisterAgent() as $value){
+			$tmp = [
+				'actor_id'       =>$value->getActorId(),
+				'telephone'      =>$value->getPhone(),
+				'realname'		 =>$value->getRealName(),
+				'promotion_code' =>$value->getPromotionCode(),
+				'introducer'     =>$value->getIntroducer(),
+				'register_agent_time' =>$value->getRegisterAgentTime(),
+				'account'             =>$value->getAccount()
+			];
+			array_push($rows,$tmp);
+		}
+		$result = ['total'=>$resp->getSize(),'rows'=>$rows];		
+		return json_encode($result);
+    }
+
+    //显示代理审核页面;
+    public function actionAgentAudit(){
+       
+		$cmd = new Cmd();
+        $cmdCode = $cmd::CMD_B2M_ConfirmAgentRegister_Request;
+        /**
+         * 初始化请求;
+         */
+        $req = new B2M_ConfirmAgentRegister_Request();
+        $req->setActorId($_POST['actorid']);
+        $req->setAccount($_POST['acct']);         
+        // 制作消息对象
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        //发送消息;
+        $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
+        $resp = new M2B_ConfirmAgentRegister_Response();
+        $errorCode = 0;
+        if(HttpUtils::parseNetMsg($resp,$respMsgStream,$errorCode)){
+
+				return json_encode(['flag'=>'success']);
+
+
+
+
+        }else{
+            echo "false";
+            echo $errorCode;
+		}
+
+    }
+    //代理审核页面
+    public function actionGoAgentAudit(){
+        $this->layout = false;
+        return $this->render("agentaudit");
+
+    }
+    //后台公告栏
+    public function actionNoticeList(){
+        $this->layout = false;
+        return $this->render("noticelist");
+
+    }
+
+	//显示历史在线用户数;
+    public function actionHistoryActiveUserCount(){
+        $this->layout = false;
+        return $this->render("historyactiveusercount");
+    }
+	//显示历史在使用卡数;
+    public function actionHistoryConsumeCardCount(){
+        $this->layout = false;
+        return $this->render("historyconsumecardcount");
+    }
+	//显示历史在使用卡数;
+    public function actionHistoryNewUserCount(){
+        $this->layout = false;
+        return $this->render("historynewusercount");
+    }
+
+	//显示历史充值金额;
+    public function actionHistoryRechargeUserCount(){
+        $this->layout = false;
+        return $this->render("historyrechargeusercount");
+    }
+    public function actionHistoryRechargeMoney(){
+        $this->layout = false;
+        return $this->render("historyrechargemoney");
+    }
+	//显示历史充值用户数;
+    public function actionHistoryRoomCount(){
+        $this->layout = false;
+        return $this->render("historyroomcount");
+    }
+
+		//显示留存;
+    public function actionGetLiuCun(){
+        $this->layout = false;
+        return $this->render("getliucun");
+    }
+
+}
+
+

@@ -1,0 +1,225 @@
+﻿# Host: localhost  (Version: 5.5.47)
+# Date: 2017-06-23 00:12:49
+# Generator: MySQL-Front 5.3  (Build 4.234)
+
+/*!40101 SET NAMES utf8 */;
+
+#
+# Structure for table "biz_games"
+#
+
+DROP TABLE IF EXISTS `biz_games`;
+CREATE TABLE `biz_games` (
+  `gameid` int(11) NOT NULL AUTO_INCREMENT,
+  `gamename` varchar(30) NOT NULL,
+  `description` varchar(50) NOT NULL,
+  `avatar_path` varchar(100) DEFAULT '',
+  `status` smallint(6) NOT NULL DEFAULT '1',
+  `downlink` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`gameid`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "biz_games"
+#
+
+/*!40000 ALTER TABLE `biz_games` DISABLE KEYS */;
+INSERT INTO `biz_games` VALUES (1,'抚州麻将','地方特色经典麻将','images/ICON.png',1,'http://www.xiaoyougames.com/download/fz.app');
+/*!40000 ALTER TABLE `biz_games` ENABLE KEYS */;
+
+#
+# Structure for table "biz_trade"
+#
+
+DROP TABLE IF EXISTS `biz_trade`;
+CREATE TABLE `biz_trade` (
+  `tradeid` int(11) NOT NULL AUTO_INCREMENT,
+  `goodid` int(11) NOT NULL,
+  `from_game_id` varchar(50) DEFAULT NULL,
+  `to_game_id` varchar(50) DEFAULT NULL,
+  `type` smallint(6) NOT NULL DEFAULT '0',
+  `qty` int(11) NOT NULL,
+  `create_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `expire_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `status` smallint(6) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`tradeid`),
+  KEY `biz_trade_fk` (`goodid`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "biz_trade"
+#
+
+/*!40000 ALTER TABLE `biz_trade` DISABLE KEYS */;
+INSERT INTO `biz_trade` VALUES (2,1,'1','2',0,22,'2017-06-17 14:55:01','0000-00-00 00:00:00',1),(3,1,'1','2',0,10,'2017-06-17 17:16:06','0000-00-00 00:00:00',1),(4,1,'2','1',0,123,'2017-06-17 15:06:17','0000-00-00 00:00:00',1);
+/*!40000 ALTER TABLE `biz_trade` ENABLE KEYS */;
+
+#
+# Structure for table "biz_trade_good"
+#
+
+DROP TABLE IF EXISTS `biz_trade_good`;
+CREATE TABLE `biz_trade_good` (
+  `goodid` int(11) NOT NULL AUTO_INCREMENT,
+  `goodname` varchar(100) NOT NULL,
+  `sortno` varchar(3) DEFAULT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '1',
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `expire_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`goodid`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "biz_trade_good"
+#
+
+/*!40000 ALTER TABLE `biz_trade_good` DISABLE KEYS */;
+INSERT INTO `biz_trade_good` VALUES (1,'房卡','1',1,'2017-06-04 17:42:32','0000-00-00 00:00:00'),(2,'金币','2',1,'0000-00-00 00:00:00','0000-00-00 00:00:00');
+/*!40000 ALTER TABLE `biz_trade_good` ENABLE KEYS */;
+
+#
+# Structure for table "biz_user_game"
+#
+
+DROP TABLE IF EXISTS `biz_user_game`;
+CREATE TABLE `biz_user_game` (
+  `userid` int(11) NOT NULL,
+  `gameid` varchar(30) NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`userid`,`gameid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+#
+# Data for table "biz_user_game"
+#
+
+/*!40000 ALTER TABLE `biz_user_game` DISABLE KEYS */;
+INSERT INTO `biz_user_game` VALUES (1,'1',1);
+/*!40000 ALTER TABLE `biz_user_game` ENABLE KEYS */;
+
+#
+# Structure for table "sec_admin_users"
+#
+
+DROP TABLE IF EXISTS `sec_admin_users`;
+CREATE TABLE `sec_admin_users` (
+  `userid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `nickname` varchar(50) NOT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `sex` smallint(6) NOT NULL,
+  `telephone` varchar(20) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `status` smallint(6) NOT NULL,
+  `avatar` varchar(50) DEFAULT 'imagesICON.png',
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "sec_admin_users"
+#
+
+/*!40000 ALTER TABLE `sec_admin_users` DISABLE KEYS */;
+INSERT INTO `sec_admin_users` VALUES (3,'xiongsd','熊少弟','670b14728ad9902aecba32e22fa4f6bd',1,'11111111111','0000-00-00 00:00:00','0000-00-00 00:00:00',1,'imagesICON.png');
+/*!40000 ALTER TABLE `sec_admin_users` ENABLE KEYS */;
+
+#
+# Structure for table "sec_users"
+#
+
+DROP TABLE IF EXISTS `sec_users`;
+CREATE TABLE `sec_users` (
+  `userid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `nickname` varchar(50) NOT NULL,
+  `promocode` varchar(20) DEFAULT NULL,
+  `sex` smallint(6) NOT NULL,
+  `telephone` varchar(20) NOT NULL,
+  `markid` varchar(100) NOT NULL,
+  `gameid` varchar(50) DEFAULT NULL,
+  `introducer` varchar(50) DEFAULT NULL,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `status` smallint(6) NOT NULL,
+  `avatar` varchar(50) DEFAULT 'imagesICON.png',
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "sec_users"
+#
+
+/*!40000 ALTER TABLE `sec_users` DISABLE KEYS */;
+INSERT INTO `sec_users` VALUES (1,'熊少弟1','fsdfsd','efr2342342',1,'13970912972','fsdfndsfnlas2342342424242','1','余小辉','2017-06-04 17:32:57','2017-06-04 17:32:57',1,'images\\ICON.png'),(2,'xiongsd','xiongsd','fsafq234',1,'15979008303','fsadfasf423423423424242','2','','0000-00-00 00:00:00','0000-00-00 00:00:00',1,'images\\ICON.png');
+/*!40000 ALTER TABLE `sec_users` ENABLE KEYS */;
+
+#
+# Structure for table "sys_menus"
+#
+
+DROP TABLE IF EXISTS `sys_menus`;
+CREATE TABLE `sys_menus` (
+  `menuid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `shortname` varchar(50) DEFAULT NULL,
+  `url` varchar(50) DEFAULT NULL,
+  `iconcls` varchar(20) DEFAULT NULL,
+  `state` smallint(6) NOT NULL DEFAULT '1',
+  `_remove` smallint(6) NOT NULL DEFAULT '-1',
+  `attr` smallint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`menuid`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "sys_menus"
+#
+
+/*!40000 ALTER TABLE `sys_menus` DISABLE KEYS */;
+INSERT INTO `sys_menus` VALUES (5,-1,'抚州特色游戏','抚州麻将',NULL,NULL,1,-1,0),(6,5,'实时在线人数','实时在线人数','sys/get-on-line',NULL,1,-1,0),(7,5,'在线房间总数','在线房间总数',NULL,NULL,1,-1,0),(8,5,'代理查询、解封、加减房卡','代理查询、解封、加减房卡',NULL,NULL,1,-1,0),(9,5,'分享活动开关','分享活动开关',NULL,NULL,1,-1,0),(10,5,'设置活动界面内容','设置活动界面内容',NULL,NULL,1,-1,0),(11,5,'代理统计','代理统计',NULL,NULL,1,-1,0),(12,5,'新注册代理审核','新注册代理审核',NULL,NULL,1,-1,0);
+/*!40000 ALTER TABLE `sys_menus` ENABLE KEYS */;
+
+#
+# Structure for table "sys_menus_attr"
+#
+
+DROP TABLE IF EXISTS `sys_menus_attr`;
+CREATE TABLE `sys_menus_attr` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `menuid` int(11) NOT NULL,
+  `attr_name` varchar(50) NOT NULL DEFAULT '',
+  `attr_value` varchar(50) NOT NULL DEFAULT 'sys/get-on-line',
+  `state` smallint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "sys_menus_attr"
+#
+
+/*!40000 ALTER TABLE `sys_menus_attr` DISABLE KEYS */;
+INSERT INTO `sys_menus_attr` VALUES (1,6,'url','sys/get-on-line',1),(2,7,'url','sys/get-house',1),(3,8,'url','sys/agent-ctrl',1),(4,9,'url','manager/share-activity-switch',1),(5,10,'url','sys/notice-publish',1),(6,11,'url','sys/agent-statistic',1),(7,12,'url','sys/agent-audit',1);
+/*!40000 ALTER TABLE `sys_menus_attr` ENABLE KEYS */;
+
+#
+# Structure for table "tmp_verify_code"
+#
+
+DROP TABLE IF EXISTS `tmp_verify_code`;
+CREATE TABLE `tmp_verify_code` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `telephone` varchar(30) NOT NULL,
+  `vcode` varchar(50) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `expire_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "tmp_verify_code"
+#
+
+/*!40000 ALTER TABLE `tmp_verify_code` DISABLE KEYS */;
+INSERT INTO `tmp_verify_code` VALUES (1,'15979008303','222222','2017-06-08 18:20:04','2017-06-08 18:25:04'),(2,'15979008304','781026','2017-06-08 18:27:50','2017-06-08 18:32:50'),(3,'15979008303','097441','2017-06-10 23:11:22','2017-06-10 23:16:22'),(4,'15979008303','763986','2017-06-10 23:13:13','2017-06-10 23:18:13'),(5,'15979008303','240318','2017-06-10 23:17:59','2017-06-10 23:22:59'),(6,'15979008303','609374','2017-06-10 23:32:35','2017-06-10 23:37:35'),(7,'15979008303','022905','2017-06-10 23:34:20','2017-06-10 23:39:20'),(8,'15979008303','599065','2017-06-10 23:35:06','2017-06-10 23:40:06'),(9,'15979008303','387703','2017-06-10 23:37:49','2017-06-10 23:42:49'),(10,'15979008303','440933','2017-06-10 23:41:07','2017-06-10 23:46:07'),(11,'15979008303','269118','2017-06-12 21:31:01','2017-06-12 21:36:01'),(12,'15979008303','977712','2017-06-13 22:56:31','2017-06-13 23:01:31'),(13,'15979008303','461839','2017-06-13 22:56:52','2017-06-13 23:01:52'),(14,'15979008303','262973','2017-06-13 22:57:45','2017-06-13 23:02:45'),(15,'13970912972','943093','2017-06-13 23:16:43','2017-06-13 23:21:43'),(16,'13970912972','088676','2017-06-13 23:18:06','2017-06-13 23:23:06'),(17,'13970912972','929160','2017-06-13 23:19:30','2017-06-13 23:24:30');
+/*!40000 ALTER TABLE `tmp_verify_code` ENABLE KEYS */;

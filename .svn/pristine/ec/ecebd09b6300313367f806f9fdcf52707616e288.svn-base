@@ -1,0 +1,716 @@
+a:9:{s:6:"config";a:5:{s:10:"phpVersion";s:6:"5.6.31";s:10:"yiiVersion";s:6:"2.0.11";s:11:"application";a:5:{s:3:"yii";s:6:"2.0.11";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"5.6.31";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:0:{}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:9:{s:4:"host";s:20:"www.xiaoyougames.com";s:10:"connection";s:10:"keep-alive";s:6:"accept";s:46:"application/json, text/javascript, */*; q=0.01";s:16:"x-requested-with";s:14:"XMLHttpRequest";s:10:"user-agent";s:108:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36";s:7:"referer";s:52:"http://www.xiaoyougames.com/GameManager/backend/web/";s:15:"accept-encoding";s:19:"gzip, deflate, sdch";s:15:"accept-language";s:14:"zh-CN,zh;q=0.8";s:6:"cookie";s:227:"_csrf-backend=c62bdf50cd2562ba2b6b380a8aa2d7f228ad745a947bfd3988d70fc9fbe9e34fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LM79WUEXFKcIe6TcuQdrI5psh3PaBZk3%22%3B%7D; PHPSESSID=7in1l2t61gho55a77m6jg758b6";}s:15:"responseHeaders";a:5:{s:12:"X-Powered-By";s:10:"PHP/5.6.31";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:62:"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:21:"utils/build-menu-tree";s:6:"action";s:58:"backend\controllers\UtilsController::actionBuildMenuTree()";s:12:"actionParams";a:0:{}s:11:"requestBody";a:0:{}s:6:"SERVER";a:36:{s:18:"REDIRECT_UNIQUE_ID";s:27:"WeMZ46T@ZH9hRPFrNUonjAAAAA0";s:15:"REDIRECT_STATUS";s:3:"200";s:9:"UNIQUE_ID";s:27:"WeMZ46T@ZH9hRPFrNUonjAAAAA0";s:9:"HTTP_HOST";s:20:"www.xiaoyougames.com";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:11:"HTTP_ACCEPT";s:46:"application/json, text/javascript, */*; q=0.01";s:21:"HTTP_X_REQUESTED_WITH";s:14:"XMLHttpRequest";s:15:"HTTP_USER_AGENT";s:108:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36";s:12:"HTTP_REFERER";s:52:"http://www.xiaoyougames.com/GameManager/backend/web/";s:20:"HTTP_ACCEPT_ENCODING";s:19:"gzip, deflate, sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"zh-CN,zh;q=0.8";s:11:"HTTP_COOKIE";s:227:"_csrf-backend=c62bdf50cd2562ba2b6b380a8aa2d7f228ad745a947bfd3988d70fc9fbe9e34fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LM79WUEXFKcIe6TcuQdrI5psh3PaBZk3%22%3B%7D; PHPSESSID=7in1l2t61gho55a77m6jg758b6";s:4:"PATH";s:49:"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:32:"Apache/2.4.6 (CentOS) PHP/5.6.31";s:11:"SERVER_NAME";s:20:"www.xiaoyougames.com";s:11:"SERVER_ADDR";s:13:"172.18.163.41";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"183.54.42.211";s:13:"DOCUMENT_ROOT";s:19:"/var/www/html/jlcms";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:19:"/var/www/html/jlcms";s:12:"SERVER_ADMIN";s:14:"root@localhost";s:15:"SCRIPT_FILENAME";s:53:"/var/www/html/jlcms/GameManager/backend/web/index.php";s:11:"REMOTE_PORT";s:5:"24163";s:12:"REDIRECT_URL";s:46:"/GameManager/backend/web/utils/build-menu-tree";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:0:"";s:11:"REQUEST_URI";s:46:"/GameManager/backend/web/utils/build-menu-tree";s:11:"SCRIPT_NAME";s:34:"/GameManager/backend/web/index.php";s:8:"PHP_SELF";s:34:"/GameManager/backend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1508055523.9089999;s:12:"REQUEST_TIME";i:1508055523;}s:3:"GET";a:0:{}s:4:"POST";a:0:{}s:6:"COOKIE";a:2:{s:13:"_csrf-backend";s:139:"c62bdf50cd2562ba2b6b380a8aa2d7f228ad745a947bfd3988d70fc9fbe9e34fa:2:{i:0;s:13:"_csrf-backend";i:1;s:32:"LM79WUEXFKcIe6TcuQdrI5psh3PaBZk3";}";s:9:"PHPSESSID";s:26:"7in1l2t61gho55a77m6jg758b6";}s:5:"FILES";a:0:{}s:7:"SESSION";a:3:{s:7:"__flash";a:0:{}s:11:"__returnUrl";s:25:"/GameManager/backend/web/";s:4:"__id";i:3;}}s:3:"log";a:1:{s:8:"messages";a:45:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1508055523.9216709;i:4;a:0:{}i:5;i:2387792;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1508055523.921699;i:4;a:0:{}i:5;i:2390952;}i:2;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1508055523.9250431;i:4;a:0:{}i:5;i:2928032;}i:3;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1508055523.9267421;i:4;a:0:{}i:5;i:3186400;}i:4;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1508055523.927006;i:4;a:0:{}i:5;i:3238952;}i:5;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1508055523.9290121;i:4;a:0:{}i:5;i:3614272;}i:6;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1508055523.9290371;i:4;a:0:{}i:5;i:3616072;}i:7;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1508055523.9290521;i:4;a:0:{}i:5;i:3617920;}i:8;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1508055523.9290631;i:4;a:0:{}i:5;i:3619736;}i:9;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1508055523.929075;i:4;a:0:{}i:5;i:3621648;}i:10;a:6:{i:0;s:55:"No matching URL rules. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1508055523.9290831;i:4;a:0:{}i:5;i:3622856;}i:11;a:6:{i:0;s:40:"Route requested: 'utils/build-menu-tree'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1508055523.9290969;i:4;a:0:{}i:5;i:3621864;}i:12;a:6:{i:0;s:35:"Route to run: utils/build-menu-tree";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1508055523.9301879;i:4;a:0:{}i:5;i:3836128;}i:13;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1508055523.932385;i:4;a:0:{}i:5;i:4251608;}i:14;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `sec_admin_users`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9407189;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5899904;}i:15;a:6:{i:0;s:70:"Opening DB connection: mysql:host=120.78.72.232;port=3306;dbname=games";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1508055523.9407899;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5909272;}i:20;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sec_admin_users' AND kcu.table_name = 'sec_admin_users'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9530971;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5966648;}i:23;a:6:{i:0;s:48:"SELECT * FROM `sec_admin_users` WHERE `userid`=3";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9570479;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6318848;}i:26;a:6:{i:0;s:74:"Running action: backend\controllers\UtilsController::actionBuildMenuTree()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1508055523.960511;i:4;a:0:{}i:5;i:6546968;}i:27;a:6:{i:0;s:162:"
+			select
+				menuid as id,
+				pid as pid,
+				shortname as text,
+				iconcls as iconCls,
+				state as state
+			from sys_menus
+			order by seqno asc
+		";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9608901;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:23;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:65:"/var/www/html/GameManager/backend/controllers/UtilsController.php";s:4:"line";i:44;s:8:"function";s:11:"getMenuData";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6582808;}i:30;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 5";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9629979;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6656888;}i:33;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 8";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9648349;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6675272;}i:36;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 9";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.966651;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6692328;}i:39;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 10";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9684179;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6708592;}i:42;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 28";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9702809;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6724848;}i:45;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 12";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9721091;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6741104;}i:48;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 13";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.973896;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6757360;}i:51;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 14";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.975687;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6773608;}i:54;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 15";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9774711;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6789856;}i:57;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 20";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9792471;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6807280;}i:60;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 27";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9810481;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6825320;}i:63;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 26";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.982831;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6842392;}i:66;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 25";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.984658;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6859152;}i:69;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 24";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.986825;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6875408;}i:72;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 23";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.988663;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6891680;}i:75;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 22";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.990458;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6907944;}i:78;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 21";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9922359;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6924208;}i:81;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 19";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9940269;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6938448;}i:84;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 18";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.995815;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6956264;}i:87;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 29";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.997586;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6973328;}i:90;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 17";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.999377;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6989584;}i:93;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 16";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.001153;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7005840;}i:96;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 7";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0029931;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7022096;}i:99;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 6";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0047989;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7038344;}i:102;a:6:{i:0;s:102:"Access to debugger is denied due to IP address restriction. The requesting IP address is 183.54.42.211";i:1;i:2;i:2;s:29:"yii\debug\Module::checkAccess";i:3;d:1508055524.007143;i:4;a:0:{}i:5;i:6998256;}}}s:9:"profiling";a:3:{s:6:"memory";i:7262992;s:4:"time";d:0.095485925674438477;s:8:"messages";a:58:{i:16;a:6:{i:0;s:70:"Opening DB connection: mysql:host=120.78.72.232;port=3306;dbname=games";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1508055523.9408269;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5911784;}i:17;a:6:{i:0;s:70:"Opening DB connection: mysql:host=120.78.72.232;port=3306;dbname=games";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1508055523.950357;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5916000;}i:18;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `sec_admin_users`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9504111;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5914344;}i:19;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `sec_admin_users`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9525089;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5937280;}i:21;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sec_admin_users' AND kcu.table_name = 'sec_admin_users'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.953151;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5970776;}i:22;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sec_admin_users' AND kcu.table_name = 'sec_admin_users'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9550619;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5973712;}i:24;a:6:{i:0;s:48:"SELECT * FROM `sec_admin_users` WHERE `userid`=3";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.957098;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6322032;}i:25;a:6:{i:0;s:48:"SELECT * FROM `sec_admin_users` WHERE `userid`=3";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9588599;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6327424;}i:28;a:6:{i:0;s:162:"
+			select
+				menuid as id,
+				pid as pid,
+				shortname as text,
+				iconcls as iconCls,
+				state as state
+			from sys_menus
+			order by seqno asc
+		";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.960928;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:23;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:65:"/var/www/html/GameManager/backend/controllers/UtilsController.php";s:4:"line";i:44;s:8:"function";s:11:"getMenuData";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6588680;}i:29;a:6:{i:0;s:162:"
+			select
+				menuid as id,
+				pid as pid,
+				shortname as text,
+				iconcls as iconCls,
+				state as state
+			from sys_menus
+			order by seqno asc
+		";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9627261;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:23;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:65:"/var/www/html/GameManager/backend/controllers/UtilsController.php";s:4:"line";i:44;s:8:"function";s:11:"getMenuData";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6622152;}i:31;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 5";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9630289;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6662632;}i:32;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 5";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.964767;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6667808;}i:34;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 8";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.96487;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6681016;}i:35;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 8";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.966588;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6686944;}i:37;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 9";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9666791;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6698072;}i:38;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 9";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.96837;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6704016;}i:40;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 10";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9684429;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6714336;}i:41;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 10";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.970233;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6720272;}i:43;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 28";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9703059;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6730592;}i:44;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 28";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.972064;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6736528;}i:46;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 12";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9721341;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6746848;}i:47;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 12";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9738469;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6752784;}i:49;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 13";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.973923;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6763104;}i:50;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 13";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.975641;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6769032;}i:52;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 14";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9757121;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6779352;}i:53;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 14";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9774261;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6785280;}i:55;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 15";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.977495;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6795600;}i:56;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 15";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9791999;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6800776;}i:58;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 20";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.979274;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6813024;}i:59;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 20";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.981003;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6818200;}i:61;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 27";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.981076;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6831064;}i:62;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 27";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.982785;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6837008;}i:64;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 26";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9828579;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6848136;}i:65;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 26";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.984602;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6854576;}i:67;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 25";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9846859;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6864896;}i:68;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 25";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.986779;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6870832;}i:70;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 24";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9868519;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6881152;}i:71;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 24";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9886141;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6887104;}i:73;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 23";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9886889;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6897424;}i:74;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 23";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9904079;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6903368;}i:76;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 22";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.990485;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6913688;}i:77;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 22";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9921899;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6919632;}i:79;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 21";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9922619;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6929952;}i:80;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 21";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9939809;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6935896;}i:82;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 19";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9940519;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6944192;}i:83;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 19";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9957709;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6949368;}i:85;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 18";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.995841;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6962008;}i:86;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 18";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.997541;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6967944;}i:88;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 29";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.997622;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6979072;}i:89;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 29";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.999331;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6985008;}i:91;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 17";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.999403;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6995328;}i:92;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 17";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0011079;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7001264;}i:94;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 16";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.001188;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7011584;}i:95;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 16";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0029471;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7017520;}i:97;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 7";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0030191;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7027840;}i:98;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 7";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0047531;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7033768;}i:100;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 6";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0048251;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7044088;}i:101;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 6";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0065839;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7050016;}}}s:2:"db";a:1:{s:8:"messages";a:56:{i:18;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `sec_admin_users`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9504111;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5914344;}i:19;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `sec_admin_users`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9525089;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5937280;}i:21;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sec_admin_users' AND kcu.table_name = 'sec_admin_users'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.953151;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5970776;}i:22;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sec_admin_users' AND kcu.table_name = 'sec_admin_users'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9550619;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5973712;}i:24;a:6:{i:0;s:48:"SELECT * FROM `sec_admin_users` WHERE `userid`=3";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.957098;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6322032;}i:25;a:6:{i:0;s:48:"SELECT * FROM `sec_admin_users` WHERE `userid`=3";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9588599;i:4;a:1:{i:0;a:5:{s:4:"file";s:49:"/var/www/html/GameManager/backend/models/User.php";s:4:"line";i:33;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6327424;}i:28;a:6:{i:0;s:162:"
+			select
+				menuid as id,
+				pid as pid,
+				shortname as text,
+				iconcls as iconCls,
+				state as state
+			from sys_menus
+			order by seqno asc
+		";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.960928;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:23;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:65:"/var/www/html/GameManager/backend/controllers/UtilsController.php";s:4:"line";i:44;s:8:"function";s:11:"getMenuData";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6588680;}i:29;a:6:{i:0;s:162:"
+			select
+				menuid as id,
+				pid as pid,
+				shortname as text,
+				iconcls as iconCls,
+				state as state
+			from sys_menus
+			order by seqno asc
+		";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9627261;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:23;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:65:"/var/www/html/GameManager/backend/controllers/UtilsController.php";s:4:"line";i:44;s:8:"function";s:11:"getMenuData";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6622152;}i:31;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 5";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9630289;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6662632;}i:32;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 5";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.964767;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6667808;}i:34;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 8";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.96487;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6681016;}i:35;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 8";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.966588;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6686944;}i:37;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 9";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9666791;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6698072;}i:38;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 9";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.96837;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6704016;}i:40;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 10";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9684429;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6714336;}i:41;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 10";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.970233;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6720272;}i:43;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 28";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9703059;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6730592;}i:44;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 28";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.972064;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6736528;}i:46;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 12";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9721341;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6746848;}i:47;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 12";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9738469;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6752784;}i:49;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 13";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.973923;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6763104;}i:50;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 13";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.975641;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6769032;}i:52;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 14";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9757121;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6779352;}i:53;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 14";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9774261;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6785280;}i:55;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 15";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.977495;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6795600;}i:56;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 15";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9791999;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6800776;}i:58;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 20";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.979274;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6813024;}i:59;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 20";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.981003;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6818200;}i:61;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 27";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.981076;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6831064;}i:62;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 27";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.982785;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6837008;}i:64;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 26";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9828579;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6848136;}i:65;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 26";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.984602;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6854576;}i:67;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 25";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9846859;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6864896;}i:68;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 25";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.986779;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6870832;}i:70;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 24";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9868519;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6881152;}i:71;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 24";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9886141;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6887104;}i:73;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 23";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9886889;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6897424;}i:74;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 23";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9904079;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6903368;}i:76;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 22";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.990485;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6913688;}i:77;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 22";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9921899;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6919632;}i:79;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 21";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9922619;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6929952;}i:80;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 21";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9939809;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6935896;}i:82;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 19";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9940519;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6944192;}i:83;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 19";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.9957709;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6949368;}i:85;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 18";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.995841;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6962008;}i:86;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 18";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.997541;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6967944;}i:88;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 29";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.997622;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6979072;}i:89;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 29";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.999331;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6985008;}i:91;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 17";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055523.999403;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:6995328;}i:92;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 17";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0011079;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7001264;}i:94;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 16";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.001188;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7011584;}i:95;a:6:{i:0;s:94:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 16";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0029471;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7017520;}i:97;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 7";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0030191;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7027840;}i:98;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 7";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0047531;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7033768;}i:100;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 6";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0048251;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7044088;}i:101;a:6:{i:0;s:93:"
+				select
+					attr_name,
+					attr_value
+				from sys_menus_attr
+				where menuid = 6";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1508055524.0065839;i:4;a:3:{i:0;a:5:{s:4:"file";s:53:"/var/www/html/GameManager/common/models/DataModel.php";s:4:"line";i:20;s:8:"function";s:8:"queryAll";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:49;s:8:"function";s:7:"execSql";s:5:"class";s:23:"common\models\DataModel";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/GameManager/backend/models/SysService.php";s:4:"line";i:33;s:8:"function";s:11:"getAttrById";s:5:"class";s:25:"backend\models\SysService";s:4:"type";s:2:"::";}}i:5;i:7050016;}}}s:6:"assets";a:0:{}s:4:"mail";a:0:{}s:8:"timeline";a:2:{s:5:"start";d:1508055523.9139221;s:3:"end";d:1508055524.010067;}s:7:"summary";a:9:{s:3:"tag";s:13:"59e319e3e1edd";s:3:"url";s:73:"http://www.xiaoyougames.com/GameManager/backend/web/utils/build-menu-tree";s:4:"ajax";i:1;s:6:"method";s:3:"GET";s:2:"ip";s:13:"183.54.42.211";s:4:"time";i:1508055524;s:10:"statusCode";i:200;s:8:"sqlCount";i:28;s:9:"mailCount";i:0;}}

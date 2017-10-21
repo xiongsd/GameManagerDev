@@ -1,0 +1,131 @@
+<?php
+
+use yii\helpers\Html;
+use yii\helpers\Url;
+
+?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+<head>
+    <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" type="text/css" href="<?=Url::to('@web/css/easyui/default/easyui.css')?>" />
+    <link rel="stylesheet" type="text/css" href="<?=Url::to('@web/css/wu.css')?>" />
+    <link rel="stylesheet" type="text/css" href="<?=Url::to('@web/css/icon.css')?>" />
+    <!-- 引入js文件 -->
+    <script type="text/javascript" src="<?=Url::to('@web/js/jquery-1.8.0.min.js')?>"></script>
+    <script type="text/javascript" src="<?=Url::to('@web/js/easyui/jquery.easyui.min.js')?>"></script>
+    <script type="text/javascript" src="<?=Url::to('@web/js/easyui/locale/easyui-lang-zh_CN.js')?>"></script>
+    <script type="text/javascript" src="<?=Url::to('@web/js/sys/noticelist.js')?>"></script>
+
+    <?= Html::csrfMetaTags() ?>
+
+</head>
+<body class="easyui-layout" fit="true">
+
+    <script type="text/javascript">
+      var notice;
+      var url = '<?=Url::to('@web',true)?>';
+      $(function (){
+        notice = new NoticeList("dgNoticeList",url);
+        notice.init();
+      });
+
+      function operate(val, row, index){
+        return '<a href="#" onclick="addNotice()" style="color:red;text-decoration:underline">编辑</a>'+'&nbsp'+
+               '<a href="#" onclick="delNotice()" style="color:red;text-decoration:underline">删除</a>';
+      }
+    </script>
+    <div data-options="region:'center'" style="background: #ffffff; height: 0px; padding: 0px;">
+          <div id="divToolbar" class="datagrid-toolbar">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="add()">添加</a>
+          </div>
+          <table id="dgNoticeList"  title="公告栏"
+                data-options="
+					url:'<?=Url::to(['sys/get-register-agent-list'])?>',
+                    method: 'get',
+                    fit: true,
+                    border: false,
+                    rownumbers: true,
+                    animate: true,
+                    collapsible: false,
+                    fitColumns: true,
+                    autoRowHeight: false,
+                    toolbar:'#divToolbar',
+                    idField :'id',
+                    singleSelect: false,
+                    checkOnSelect:false,
+                    selectOnCheck: true,
+                    pagination:true,
+                    striped:true">
+                <thead>
+                    <tr>
+
+                        <th data-options="field:'notice', halign:'center',align:'left'"
+                            width="220">公告</th>
+                        <th data-options="field:'operation', halign:'center',align:'center',formatter:operate"
+                              width="50">操作</th>   
+                    </tr>
+                </thead>
+          </table>
+    </div> 
+	<div id="myDlg-buttons">  
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" id="myDlg-saveBtn">确定</a>  
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" id="myDlg-closeBtn">取消</a>  
+	</div>  
+	<div id="noticeDlg" class="easyui-dialog" title="公告窗口" style="width: 500px; height: 400px; padding: 5px">  
+    </div>  
+<script type="text/javascript">
+function add(){
+		$('#noticeDlg').dialog("open"); 
+	}
+$(function(){  
+	
+	 var bClose=true; 
+	 $("#noticeDlg").dialog({  
+		    href: 'http://www.xiaoyougames.com/GameManager/backend/web/',
+            modal: true,  
+            closable: true,  
+            closed: true,  
+            buttons: '#myDlg-buttons',  
+            onBeforeClose:function(){//关闭弹出框之前动作-弹出提示  
+                        if (!bClose) {    
+                            $.messager.confirm("提醒", "确定关闭该窗口?",function (r) {    
+                                if (r) {    
+                                    bClose = true;//标记可以退出    
+                                    $("#noticeDlg").dialog("close");    
+                                 }    
+                            });    
+                        }  
+                        return bClose;  //通过全局变量来控制是否关闭窗口    
+            }  
+        });  
+        //弹出框打开  
+        $('#myDlg-openBtn').click(function(){  
+            //先设置为false;  
+            bClose=false;  
+            $('#noticeDlg').dialog("open");  
+        });  
+          
+        //点击保存,假定保存成功  
+        $('#myDlg-saveBtn').click(function(){  
+            $.messager.alert("提示信息","操作成功!","info");  
+            //这里在后面加true,将会绕过onBeforeClose事件,弹出框直接关闭  
+            $('#noticeDlg').dialog("close",true);  
+        });  
+          
+        //点击关闭  
+        $('#myDlg-closeBtn').click(function(){  
+			bClose=true;  
+            $('#noticeDlg').dialog("close");  
+        });  
+
+})  
+	if (window != top){
+		 top.location.href = location.href;
+	}
+
+</script>
+</body>
+</html>
