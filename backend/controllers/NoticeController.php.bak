@@ -81,7 +81,7 @@ class NoticeController extends Controller
          * 制作请求消息二进制流
          * @var binary
          */
-        $reqMsgStr = HttpUtils::makeNetMsg($req,$cmd::CMD_B2M_AddNewAnnouncement_Request,$_GET['gameid']);
+        $reqMsgStr = HttpUtils::makeNetMsg($req,$cmd::CMD_B2M_AddNewAnnouncement_Request);
         /**
          * 发送消息
          * @var binary

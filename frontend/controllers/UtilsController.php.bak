@@ -45,8 +45,7 @@ class UtilsController extends Controller
 
         //制作消息对象
         $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
-        //发送消息;
-        
+        //发送消息;        
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
 
         if($respMsgStream === null){
@@ -135,7 +134,7 @@ class UtilsController extends Controller
         $cmdCode = $cmd::CMD_B2M_MonthPre1Recharge_Request;
         //
         $req = new B2M_MonthPre1Recharge_Request();
-        $req->setPage(1);
+        $req->setPage($_GET['page']);
 
 		$gameid = SysUtils::getValueBySessionKey('gameid');
 
@@ -237,7 +236,7 @@ class UtilsController extends Controller
         $gameid = SysUtils::getValueBySessionKey('gameid');
 
         //制作消息对象
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,2);
         //发送消息;
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         if($respMsgStream === null){
@@ -252,10 +251,10 @@ class UtilsController extends Controller
         if(HttpUtils::parseNetMsg($resp,$respMsgStream,$errorCode)){
 			$value = [
 				'actorId' => $resp->getActorId(),
-				'd1'      => $resp->getD1(),
-				'd2'      => $resp->getD2(),
-				'd7'	  => $resp->getD7(),
-				'all'	  => $resp->getAll()		
+				'd1'      => $resp->getActorCountD1(),
+				'd2'      => $resp->getActorCountD2(),
+				'd7'	  => $resp->getActorCountD7(),
+				'all'	  => $resp->getActorCountAll()		
 			];
 
 			return json_encode($value);

@@ -90,7 +90,7 @@ use common\models\UrlUtils;
                    		alert(data.retMsg);
                         return;
                    }else{
-                       
+                       alert();
 					   $scope.agentCnt = data;
 				   
 				   
@@ -182,7 +182,7 @@ use common\models\UrlUtils;
               url:$scope.currentUrl,
               params: {'page':$scope.page},
           }).success(function(data) {
-				  alert();
+				  
 				  $ionicLoading.hide();
 				  $scope.rankRows = [];
 

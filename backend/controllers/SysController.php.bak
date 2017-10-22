@@ -111,8 +111,7 @@ class SysController extends Controller
 	//显示活动发布页面;
     public function actionRollingNotice(){
         $this->layout = false;
-        return $this->render("rollingnotice");
-    }
+        return $this->render("rollingnotice",['gameid'=>$_GET['gameid']]);
     //显示代理统计页面;
     public function actionAgentStatistic(){
         $this->layout = false;
@@ -175,7 +174,7 @@ class SysController extends Controller
         $req->setActorId($_POST['actorid']);
         $req->setAccount($_POST['acct']);  
         // 制作消息对象
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$_POST['gameid']);
         //发送消息;
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         $resp = new M2B_ConfirmAgentRegister_Response();
@@ -202,7 +201,7 @@ class SysController extends Controller
     //后台公告栏
     public function actionNoticeList(){
         $this->layout = false;
-        return $this->render("noticelist");
+        return $this->render("noticelist",['gameid'=>$_GET['gameid']]);
 
     }
 

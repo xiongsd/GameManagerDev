@@ -90,7 +90,7 @@ use common\models\UrlUtils;
                    		alert(data.retMsg);
                         return;
                    }else{
-                       
+
 					   $scope.agentCnt = data;
 				   
 				   

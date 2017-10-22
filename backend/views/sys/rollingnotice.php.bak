@@ -65,7 +65,7 @@ use yii\helpers\Url;
 				}
 				if(window.confirm('您确定要发布该条滚动公告吗？')){
 					$.ajax({
-								 url:"<?=Url::to(['notice/set-rolling-bulletin','gameid'=>$gameid])?>",
+								 url:<?=Url::to(['notice/set-rolling-bulletin','gameid'=>$gameid])?>",
 								 type : 'get',
 								 data:{content:$("#content").val()},
 								 dataType : 'json',

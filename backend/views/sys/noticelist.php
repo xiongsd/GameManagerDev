@@ -58,7 +58,7 @@ use yii\helpers\Url;
 			  }
 			});
 		  $('#dg').datagrid({
-				    url:'<?=Url::to(['notice/get-notice-data'])?>',
+				    url:"<?=Url::to(['notice/get-notice-data','gameid'=>$gameid])?>",
 				    method: 'get',
 					fit: true,
                     border: false,
@@ -95,9 +95,9 @@ use yii\helpers\Url;
 					},
 					onAfterEdit: function (rowIndex, rowData, changes){
 						 if(isNewRecord)
-							var url = '<?=Url::to(["notice/add-notice"])?>';                    
+							var url = "<?=Url::to(['notice/add-notice','gameid'=>$gameid])?>";                    
 						 else
-							var url = '<?=Url::to(["notice/modify-notice"])?>';      
+							var url = "<?=Url::to(['notice/modify-notice','gameid'=>$gameid])?>";      
 						if(editIndex!=undefined){
 							  $.ajax({
 								 url:url,
@@ -175,14 +175,14 @@ $("#save").show();
 	  	  function delRow(time){
 			  if(window.confirm('你确定要取消交易吗？')){
                 			 $.ajax({
-								 url:'<?=Url::to(["notice/del-notice"])?>',
+								 url:"<?=Url::to(['notice/del-notice','gameid'=>$gameid])?>",
 								 type : 'get',
 								 data:{time:time},
 								 dataType : 'json',
 								 success : function(r){
 									 if(r.flag=='success'){
 											$('#dg').datagrid('unselectAll').datagrid('clearSelections');
-
+                                          $('#dg').datagrid('reload');
 										  $.messager.show({
 											 title : '提示',
 											 msg : '删除成功'
