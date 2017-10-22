@@ -46,6 +46,7 @@ class SysUtils{
 		if($session->isActive == false){
 			$session->open();
 		}
+		$session->set($key,$value);
 	
 	}
 

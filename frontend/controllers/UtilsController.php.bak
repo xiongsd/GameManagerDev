@@ -281,10 +281,8 @@ class UtilsController extends Controller
         $req->setActorId($actorid);
 
 
-        $gameid = SysUtils::getValueBySessionKey('gameid');
-
         //制作消息对象
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
         //发送消息;
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         if($respMsgStream === null){

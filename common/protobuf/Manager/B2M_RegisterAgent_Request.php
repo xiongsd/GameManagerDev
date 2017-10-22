@@ -37,6 +37,10 @@ class B2M_RegisterAgent_Request extends \Google\Protobuf\Internal\Message
      * <code>string wxId = 5;</code>
      */
     private $wxId = '';
+    /**
+     * <code>int32 account_id = 6;</code>
+     */
+    private $account_id = 0;
 
     public function __construct() {
         \GPBMetadata\Manager::initOnce();
@@ -134,6 +138,23 @@ class B2M_RegisterAgent_Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->wxId = $var;
+    }
+
+    /**
+     * <code>int32 account_id = 6;</code>
+     */
+    public function getAccountId()
+    {
+        return $this->account_id;
+    }
+
+    /**
+     * <code>int32 account_id = 6;</code>
+     */
+    public function setAccountId($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->account_id = $var;
     }
 
 }

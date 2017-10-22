@@ -6,6 +6,7 @@ use common\models\UrlUtils;
     gameApp.controller('registerCtrl', function($scope,$http) {
         $scope.scope = $scope;
         $scope.gameid = "<?=$gameId?>";
+		$scope.accountid = "<?=$actorId?>";
         $scope.nickname = "";
 		$scope.wxid = "";
         $scope.telephone = "";
@@ -44,7 +45,7 @@ use common\models\UrlUtils;
            $http({
               method: 'GET',
               url:"<?=UrlUtils::createUrl(['apply/register-agent']);?>",
-              params: {'gameid':$scope.gameid,'telephone':$scope.telephone,'nickname':$scope.nickname,'verifytelcode':$scope.verfiyCode,'wxid':$scope.wxid},
+              params: {'accountid':$scope.accountid,'gameid':$scope.gameid,'telephone':$scope.telephone,'nickname':$scope.nickname,'verifytelcode':$scope.verfiyCode,'wxid':$scope.wxid},
            }).success(function(data) {
 		      if(data.retCode == 2){
 				alert('注册异常');
@@ -55,7 +56,7 @@ use common\models\UrlUtils;
 
 			  }else if(data.retCode == 1){
 				  alert(data.retMsg);
-				  window.location = "<?=UrlUtils::createUrl(['apply/go-agent-req']) ?>";
+				  window.location = "<?=UrlUtils::createUrl(['apply/go-agent-req','gameid'=>$gameId]) ?>";
 
 			  }else{
 				  alert('未知异常!');

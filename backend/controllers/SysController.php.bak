@@ -175,7 +175,7 @@ class SysController extends Controller
         $req->setActorId($_POST['actorid']);
         $req->setAccount($_POST['acct']);  
         // 制作消息对象
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$_POST['gameid']);
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
         //发送消息;
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         $resp = new M2B_ConfirmAgentRegister_Response();

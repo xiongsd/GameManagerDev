@@ -128,7 +128,7 @@ class TradeController extends Controller
         $actorid = SysUtils::getValueBySessionKey('actorid');
         $req->setActorId($actorid);
 		$gameid = SysUtils::getValueBySessionKey('gameid');
-		//FILE_PUT_CONTENTS('log.txt',"gameid".$gameid,FILE_APPEND);
+		FILE_PUT_CONTENTS('log.txt',"gameid".$gameid,FILE_APPEND);
         $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         if($respMsgStream === false){

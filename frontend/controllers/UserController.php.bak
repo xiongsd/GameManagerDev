@@ -55,7 +55,6 @@ class UserController extends Controller
         $openId = $access_token_info['openid'];
         $wxUserInfo = UserService::getUserInfo($access_token,$openId);
 		$state = explode(',',$_GET['state']);
-		die($state[1]);
 		if($state[0]==1){
 			return $this->redirect(UrlUtils::createUrl(["apply/go-agent-backend",['gameid'=>$state[1]]]));
 		}else{
@@ -101,7 +100,7 @@ class UserController extends Controller
             Yii::$app->runAction('apply/error');
         }
 
-
+        $gameid = SysUtils::getValueBySessionKey('gameid');
         $cmd = new Cmd();
         $cmdCode = $cmd::CMD_B2M_SearchAccount_Request;
         //

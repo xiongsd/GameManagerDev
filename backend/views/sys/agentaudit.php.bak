@@ -23,7 +23,7 @@ use yii\helpers\Url;
 
         <table id="agentAuditDg" class="easyui-datagrid"  title="代理审核"
             data-options="
-                url:'<?=Url::to(['sys/get-register-agent-list'])?>',
+                url:'<?=Url::to(['sys/get-register-agent-list','gameid'=>$gameid])?>',
                 method: 'get',
                 fit: true,
                 border: false,
@@ -73,8 +73,8 @@ use yii\helpers\Url;
 <script type="text/javascript">
 	function agentAudit(actorid,account){
 		$.ajax({
-		 url:'<?=Url::to(["sys/agent-audit"])?>',
-		 data:{actorid:actorid,acct:account},
+		 url:"<?=Url::to(['sys/agent-audit'])?>",
+		 data:{actorid:actorid,acct:account,gameid:<?=$gameid?>},
 		 type : 'post',		 
 		 dataType : 'json',
 		 success : function(r){
@@ -106,9 +106,7 @@ use yii\helpers\Url;
 
 	}
 
-		if (window != top){
-		 top.location.href = location.href;
-	}
+
 
 </script>
 

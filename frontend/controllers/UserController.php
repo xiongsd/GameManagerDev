@@ -100,7 +100,7 @@ class UserController extends Controller
             Yii::$app->runAction('apply/error');
         }
 
-
+        $gameid = SysUtils::getValueBySessionKey('gameid');
         $cmd = new Cmd();
         $cmdCode = $cmd::CMD_B2M_SearchAccount_Request;
         //
@@ -110,7 +110,7 @@ class UserController extends Controller
         $req->setWxOpenId($openid);
 
         //制作消息对象
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
         //发送消息;
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         if($respMsgStream === false){

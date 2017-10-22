@@ -17,7 +17,7 @@ class SysUtils{
 	const SMS_APP_KEY = "b82a940c0c539a45ee4064957183b23a";
 	const SMS_TPL_ID = 22991;
 	//游戏服务器监听地址
-	const GAME_SERVER_ADDR = "http://172.18.163.39:61000";
+	const GAME_SERVER_ADDR = "http://47.92.131.79:61000";
 	/**
      * 根据缓存字段，获取缓存数据
      *

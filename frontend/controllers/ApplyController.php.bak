@@ -70,8 +70,7 @@ class ApplyController extends Controller
         /**
          * 注册后台账号;
          */
-		$unionid = $unionid;
-		$openid  =  $openid;
+
 		$telephone = $_GET['telephone'];
 		$nickname = $_GET['nickname'];
 		$wxid = $_GET['wxid'];
@@ -81,6 +80,8 @@ class ApplyController extends Controller
         $req->setPhone($telephone);
         $req->setName($nickname);
 		$req->setWxId($wxid);
+		$req->setAccountId($_GET['accountid']);
+
 
         //制作消息对象
         $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
@@ -113,6 +114,8 @@ class ApplyController extends Controller
 		}else{
 			$gameid = 1;
 		}
+		SysUtils::setGameIdToSession($gameid);
+
 
 		/*
          *获取微信用户信息
@@ -150,6 +153,8 @@ class ApplyController extends Controller
 		}else{
 			$gameid = 1;
 		}
+
+		SysService::setGameIdToSession($gameid);
         $wxUserInfo = SysUtils::getValueBySessionKey('wxUserInfo');
         if(isset($wxUserInfo)){
             $unionid = $wxUserInfo['unionid'];
@@ -157,9 +162,11 @@ class ApplyController extends Controller
         }else{
             return $this->redirect(UrlUtils::createUrl(["user/get-auth",'a'=>1,'gameid'=>$gameid]));
         }
-		$errorCode = 0;		
+		$errorCode = 0;
+		die($gameid);
         $user = UserService::getUserInfoByMarkId($openid,$unionid,$errorCode,$gameid);
 		$auditResult  = $user->getAgent();
+		
         if($auditResult==0){            
              return $this->render('applyTips');
          }else{
@@ -175,7 +182,6 @@ class ApplyController extends Controller
     /*
      * 跳转代理注册审核页面;
      */ 
-
     public function goAuditPage($msg){
 
         $title = "提示信息";
@@ -206,8 +212,7 @@ class ApplyController extends Controller
         $title = '申请与查询';
 		$actorId = null;
 		if($isRegistered==1){
-			
-			$accountInfo = UserService::getUserInfoByMarkId($openid,$unionid,$errorCode);
+			$accountInfo = UserService::getUserInfoByMarkId($openid,$unionid,$errorCode,$gameId);
 			$actorId = $accountInfo->getActorId();	
 		}
         return $this->render('apply_step2',['gameId'=>$gameId,'title'=>$title,'actorId'=>$actorId]);

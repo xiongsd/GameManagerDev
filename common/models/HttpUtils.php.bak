@@ -73,10 +73,9 @@ class HttpUtils{
         return $data;
 	}
 
-	public static function makeNetMsg($cotentObj,$cmd,$gameid=1){
+	public static function makeNetMsg($cotentObj,$cmd,$gameid){
 		$sendNetMsg = new NetMsg();
         $sendNetMsg->setCmd($cmd);
-		die("ss".$gameid);
 		$sendNetMsg->setGameId($gameid);
         $sendNetMsg->setErrorCode(0);
         $toStr = $cotentObj->serializeToString();

@@ -85,6 +85,10 @@ class RecentCreateRoom extends \Google\Protobuf\Internal\Message
      * <code>string player4_wx_name = 18;</code>
      */
     private $player4_wx_name = '';
+    /**
+     * <code>bool complete = 19;</code>
+     */
+    private $complete = false;
 
     public function __construct() {
         \GPBMetadata\Manager::initOnce();
@@ -395,6 +399,23 @@ class RecentCreateRoom extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->player4_wx_name = $var;
+    }
+
+    /**
+     * <code>bool complete = 19;</code>
+     */
+    public function getComplete()
+    {
+        return $this->complete;
+    }
+
+    /**
+     * <code>bool complete = 19;</code>
+     */
+    public function setComplete($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->complete = $var;
     }
 
 }
