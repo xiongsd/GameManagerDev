@@ -163,7 +163,6 @@ class ApplyController extends Controller
             return $this->redirect(UrlUtils::createUrl(["user/get-auth",'a'=>1,'gameid'=>$gameid]));
         }
 		$errorCode = 0;
-		die($gameid);
         $user = UserService::getUserInfoByMarkId($openid,$unionid,$errorCode,$gameid);
 		$auditResult  = $user->getAgent();
 		

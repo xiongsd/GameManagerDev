@@ -114,7 +114,7 @@ class ApplyController extends Controller
 		}else{
 			$gameid = 1;
 		}
-		SysUtils::setGameIdToSession($gameid);
+		SysService::setGameIdToSession($gameid);
 
 
 		/*
