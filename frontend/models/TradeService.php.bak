@@ -149,7 +149,6 @@ class TradeService extends Model
 
 	public static function updateRechargeStatus($orderid){
 		$sql = "update biz_rechargeitems set status=1 where orderid = '$orderid'";
-		DataModel::execSql($sql);
 
 	}
 

@@ -322,7 +322,7 @@ use common\models\UrlUtils;
 			$scope.selectIndex = index;
 		}
 		$scope.pay = function(){
-			
+
 			$http({
 			  method: 'GET',
 			  params: {'id':$scope.selMallItem.id,'cardcount':$scope.selMallItem.cardcount,'money':$scope.selMallItem.money,'desc':$scope.selMallItem.desc},
@@ -407,7 +407,7 @@ use common\models\UrlUtils;
           $http({
               method: 'GET',
               params: {'page':$scope.pageNum2},
-              url:"<?=UrlUtils::createUrl(['trade/retrive-receivecard-record']);?>"
+              url:"<?=UrlUtils::createUrl(['trade/retrive-receive-card-record']);?>"
           }).success(function(data) {
                   alert(JSON.Stringify(data));
           	       if(data.retCode == 1){

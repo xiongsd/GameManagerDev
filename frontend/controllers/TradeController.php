@@ -163,13 +163,13 @@ class TradeController extends Controller
      */
     public function actionRetriveReceiveCardRecord(){
      	$cmd = new Cmd();
-        $cmdCode = $cmd::B2M_RetriveReceiveCardRecord_Request;
-        $req = new  RetriveReceiveCardRecord_Request();
+        $cmdCode = $cmd::CMD_B2M_RetriveReceiveCardRecord_Request;
+        $req = new B2M_RetriveReceiveCardRecord_Request();
         $req->setPage($_GET['page']);
         $actorid = SysUtils::getValueBySessionKey('actorid');
         $req->setActorId($actorid);
 		$gameid = SysUtils::getValueBySessionKey('gameid');
-		
+
         $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         if($respMsgStream === false){
@@ -225,7 +225,9 @@ class TradeController extends Controller
 		$req->setMoney($_GET['money']);
 		$req->setChannel(1);
 		$req->setItem($_GET['id']);
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        $gameid = SysUtils::getValueBySessionKey('gameid');
+
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
          if($respMsgStream === false){
             return json_encode([
@@ -269,11 +271,11 @@ class TradeController extends Controller
         $this->reqHandler->setParameter('mch_id',$this->cfg->C('mchId'));//必填项，商户号，由威富通分配
         $this->reqHandler->setParameter('version',$this->cfg->C('version'));
 		$this->reqHandler->setParameter('sub_openid',$wxUserInfo['openid']); 
-		$this->reqHandler->setParameter('attach',"$cardcount,$orderId,$id,$actorid");
+		$this->reqHandler->setParameter('attach',"$cardcount,$orderId,$id,$actorid,$gameid");
         //通知地址，必填项，接收威富通通知的URL，需给绝对路径，255字符内格式如:http://wap.tenpay.com/tenpay.asp
-        $notify_url = 'http://'.$_SERVER['HTTP_HOST'];
-        $this->reqHandler->setParameter('notify_url',$notify_url.'/GameManager/frontend/web/index.php?r=trade/pay-call-back');
-		$this->reqHandler->setParameter('callback_url','http://www.xiaoyougames.com/GameManager/frontend/web/index.php?r=apply/go-agent-backend');
+		$notify_url=dirname('http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);; 
+        $this->reqHandler->setParameter('notify_url',$notify_url.'/index.php?r=trade/pay-call-back');
+		$this->reqHandler->setParameter('callback_url',$notify_url.'/index.php?r=apply/go-agent-backend');
         $this->reqHandler->setParameter('nonce_str',mt_rand(time(),time()+rand()));//随机字符串，必填项，不长于 32 位
         $this->reqHandler->createSign();//创建签名
         
@@ -286,19 +288,15 @@ class TradeController extends Controller
             if($this->resHandler->isTenpaySign()){
                 //当返回状态与业务结果都为0时才返回支付二维码，其它结果请查看接口文档
                 if($this->resHandler->getParameter('status') == 0 && $this->resHandler->getParameter('result_code') == 0){
-					File_put_contents('log.txt',"x",FILE_APPEND);
                     echo json_encode(array('token_id'=>$this->resHandler->getParameter('token_id')));
                     exit();
                 }else{
-					File_put_contents('log.txt',"xX",FILE_APPEND);
                     echo json_encode(array('status'=>500,'msg'=>'Error Code:'.$this->resHandler->getParameter('err_code').' Error Message:'.$this->resHandler->getParameter('err_msg')));
                     exit();
                 }
             }
-			File_put_contents('log.txt',"xXX",FILE_APPEND);
             echo json_encode(array('status'=>500,'msg'=>'Error Code:'.$this->resHandler->getParameter('status').' Error Message:'.$this->resHandler->getParameter('message')));
         }else{
-			File_put_contents('log.txt',"xXXX",FILE_APPEND);
             echo json_encode(array('status'=>500,'msg'=>'Response Code:'.$this->pay->getResponseCode().' Error Info:'.$this->pay->getErrInfo()));
         }
 	
@@ -311,7 +309,8 @@ class TradeController extends Controller
 		$cmd = new Cmd();
         $cmdCode = $cmd::CMD_B2M_GetMallItems_Request;
         $req = new  B2M_GetMallItems_Request();
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        $gameid = SysUtils::getValueBySessionKey('gameid');
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
          if($respMsgStream === false){
             return json_encode([
@@ -353,6 +352,7 @@ class TradeController extends Controller
     
 		$xml = file_get_contents('php://input');
         $this->resHandler->setContent($xml);
+
         $this->resHandler->setKey($this->cfg->C('key'));
         if($this->resHandler->isTenpaySign()){
             if($this->resHandler->getParameter('status') == 0 && $this->resHandler->getParameter('result_code') == 0){
@@ -372,12 +372,15 @@ class TradeController extends Controller
 				$cardcount = $attach[0];
 				//目标发卡actorid 
 				$actorid = $attach[3];
+
+				$gameid = $attach[4];
 				//支付日志
-				$isNotWrite = TradeService::findWriteRechargeItem($orderid);
-				if(isNotWrite){
-					TradeService::toWriteRechargeItems($actorid,$actorid,$cardcount,$t_fee,$itemid,$orderid,$pay_at);
+				$isSaved = TradeService::findWriteRechargeItem($orderid);
+				if($isSaved == 0){
+					TradeService::toWriteRechargeItems($gameid,$actorid,$actorid,$cardcount,$t_fee,$itemid,$orderid,$pay_at);
 
 				}
+
 				$cmd = new Cmd();
 				$cmdCode = $cmd::CMD_B2M_Recharge_Request;
 				$req = new B2M_Recharge_Request();
@@ -389,7 +392,9 @@ class TradeController extends Controller
 				$req->setChannel(1);  
 				$req->setItem($attach[2]);  
 				$req->setId($attach[1]);  
-				$reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+
+
+                $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
 				$respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
 				if($respMsgStream === false){
 
@@ -401,6 +406,7 @@ class TradeController extends Controller
 				$resp = new M2B_Recharge_Response();
 				$errorCode = 0;
 				if(HttpUtils::parseNetMsg($resp,$respMsgStream,$errorCode)){
+					TradeService::updateRechargeStatus($orderid);
 					echo 'success';
 					exit();
 				}else{
@@ -432,9 +438,9 @@ class TradeController extends Controller
 //		$req->setAddCardCount($_GET['cardCount']);
 //		$req->setOperatorId($_GET['operatorId']);
 //		$req->setMoney($_GET['money']);
-		$req->setActorId(1271578624);
+		$req->setActorId(1271537680);
 		$req->setAddCardCount(1);
-		$req->setOperatorId(1271578624);
+		$req->setOperatorId(1271537680);
 		$req->setMoney(1);
 		$req->setChannel(1);
 		$req->setItem(1);
@@ -490,6 +496,7 @@ class TradeController extends Controller
 				$resp = new M2B_Recharge_Response();
 				$errorCode = 0;
 				if(HttpUtils::parseNetMsg($resp,$respMsgStream,$errorCode)){
+
 					echo "ok";
 				}else{
 					 return json_encode([

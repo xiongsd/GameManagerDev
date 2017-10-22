@@ -112,7 +112,7 @@ class ApplyController extends Controller
 		if(isset($_GET['gameid'])){
 			$gameid = $_GET['gameid'];		
 		}else{
-			$gameid = 1;
+			$gameid = SysUtils::getValueBySessionKey('gameid');
 		}
 		SysService::setGameIdToSession($gameid);
 
@@ -148,13 +148,15 @@ class ApplyController extends Controller
 		/*
          *获取微信用户信息
          */
+
 		if(isset($_GET['gameid'])){
-			$gameid = $_GET['gameid'];		
+			$gameid = $_GET['gameid'];	
+			SysService::setGameIdToSession($gameid);
 		}else{
-			$gameid = 1;
+			$gameid = SysUtils::getValueBySessionKey('gameid');
+
 		}
 
-		SysService::setGameIdToSession($gameid);
         $wxUserInfo = SysUtils::getValueBySessionKey('wxUserInfo');
         if(isset($wxUserInfo)){
             $unionid = $wxUserInfo['unionid'];
