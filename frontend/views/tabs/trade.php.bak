@@ -34,9 +34,10 @@
 			</label>
 		</div>
 		<div class="text-center">		
-			<button class="button  button-balanced" ng-click="send()">赠   送</button>
+			<button class="button  button-balanced" ng-click="showConfirm()">赠   送</button>
+			<div class="toast" ng-if="sendToast.show"><span>{{sendToast.info}}</span></div>
 			<div style="margin:50px;color:red"><span>提示：进行操作前，请赠送人保证游戏在线</span></div>
 		</div>
-		<div class="toast" ng-if="sendToast.show"><span>{{sendToast.info}}</span></div>
+		
 	</ion-content>
 </ion-view>

@@ -17,7 +17,7 @@ use Manager\M2B_TodayRecharge_Response;
 use Manager\B2M_MonthRecharge_Request;
 use Manager\M2B_MonthRecharge_Response;
 
-use Manager\B2m_MonthPre1Recharge_Request;
+use Manager\B2M_MonthPre1Recharge_Request;
 use Manager\M2B_MonthPre1Recharge_Response;
 use Manager\B2M_AllRecharge_Request;
 use Manager\M2B_AllRecharge_Response;
@@ -134,7 +134,7 @@ class UtilsController extends Controller
         $cmd = new Cmd();
         $cmdCode = $cmd::CMD_B2M_MonthPre1Recharge_Request;
         //
-        $req = new B2m_MonthPre1Recharge_Request();
+        $req = new B2M_MonthPre1Recharge_Request();
         $req->setPage($_GET['page']);
 
 		$gameid = SysUtils::getValueBySessionKey('gameid');

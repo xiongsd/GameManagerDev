@@ -17,7 +17,7 @@ use Manager\M2B_TodayRecharge_Response;
 use Manager\B2M_MonthRecharge_Request;
 use Manager\M2B_MonthRecharge_Response;
 
-use Manager\B2m_MonthPre1Recharge_Request;
+use Manager\B2M_MonthPre1Recharge_Request;
 use Manager\M2B_MonthPre1Recharge_Response;
 use Manager\B2M_AllRecharge_Request;
 use Manager\M2B_AllRecharge_Response;
@@ -134,8 +134,8 @@ class UtilsController extends Controller
         $cmd = new Cmd();
         $cmdCode = $cmd::CMD_B2M_MonthPre1Recharge_Request;
         //
-        $req = new B2m_MonthPre1Recharge_Request();
-        $req->setPage($_GET['page']);
+        $req = new B2M_MonthPre1Recharge_Request();
+        $req->setPage(1);
 
 		$gameid = SysUtils::getValueBySessionKey('gameid');
 
@@ -281,8 +281,10 @@ class UtilsController extends Controller
         $req->setActorId($actorid);
 
 
+        $gameid = SysUtils::getValueBySessionKey('gameid');
+
         //制作消息对象
-        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode);
+        $reqMsgStream = HttpUtils::makeNetMsg($req,$cmdCode,$gameid);
         //发送消息;
         $respMsgStream = HttpUtils::sendNetMsg($reqMsgStream);
         if($respMsgStream === null){

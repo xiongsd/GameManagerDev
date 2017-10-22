@@ -142,7 +142,7 @@ use common\models\UrlUtils;
 
         }
     })
-    .controller('RankTabCtrl', function($scope,$http,$state) {
+    .controller('RankTabCtrl', function($scope,$http,$state,$ionicLoading) {
 
         $scope.btnGroup = [
           {'name':'本日','url':'<?=UrlUtils::createUrl(['utils/get-today-rechange'])?>'},
@@ -174,11 +174,16 @@ use common\models\UrlUtils;
 
         };
         $scope.loadRankList = function(){
+			$ionicLoading.show({
+			  template: '加载...'
+			});
           $http({
               method: 'GET',
               url:$scope.currentUrl,
               params: {'page':$scope.page},
           }).success(function(data) {
+				  alert();
+				  $ionicLoading.hide();
 				  $scope.rankRows = [];
 
           	                             if(data.retCode == 1){
@@ -191,11 +196,13 @@ use common\models\UrlUtils;
             for(var i=0,l=data.length;i<l;i++){
                 $scope.rankRows.push(data[i]);
             }
+			
             if(data.length<10){
                 $scope.hasMoreData = false;
               }else{
                 $scope.hasMoreData = true;
               }
+			   
             $scope.$broadcast('scroll.infiniteScrollComplete');  
 
           });
@@ -208,7 +215,7 @@ use common\models\UrlUtils;
 
 
     })
-    .controller('TradeTabCtrl',function($scope,$state,$ionicLoading,$http,$ionicModal,$timeout,ionicDatePicker) {
+    .controller('TradeTabCtrl',function($scope,$state,$ionicLoading,$http,$ionicPopup,$ionicModal,$timeout,ionicDatePicker) {
         $scope.accountInfo = {};
        
         $scope.sendData = {
@@ -243,46 +250,65 @@ use common\models\UrlUtils;
         $scope.goBack = function(){       
           $state.go('tabs.profile');
         };
-
+       
         $scope.send = function(){
-          var target_actor_id = $scope.sendData.target_actor_id;
-          var card_count = $scope.sendData.card_count;
-          if(target_actor_id.length == 0){
-              $scope.sendToast.show = true;
-              $scope.sendToast.info = '游戏ID不能为空';
-              $timeout(function(){
-                $scope.sendToast.show = false;
-               },500);
-              return;
-          }
-          var reg = /^[0-9]*[1-9][0-9]*$/;
-          if(!reg.test(card_count)){
-              $scope.sendToast.show = true;
-              $scope.sendToast.info = '数量不合法';
-              $timeout(function(){
-                $scope.sendToast.show = false;
-               },500);
-              return;
-          }           
-          $http({
-              method: 'GET',
-              params: {'target_actor_id':target_actor_id,'card_count':card_count},
-              url:"<?=UrlUtils::createUrl(['trade/card-rollout']);?>"
-          }).success(function(data) {
-          	      if(data.retCode == 1){
-                        alert("请求超时");
-                        return;
-                   }else if(data.retCode == 2){
-                   		alert(data.retMsg);
-                        return;
-                   }
-              $scope.accountInfo.cardcount = data.cardcount;
-              $scope.sendToast.show = true;
-              $scope.sendToast.info = '赠送成功';
-              $timeout(function(){
-                $scope.sendToast.show = false;
-               },3000);
-          });
+			var target_actor_id = $scope.sendData.target_actor_id;
+			  var card_count = $scope.sendData.card_count;
+			  if(target_actor_id.length == 0){
+				  $scope.sendToast.show = true;
+				  $scope.sendToast.info = '游戏ID不能为空';
+				  $timeout(function(){
+					$scope.sendToast.show = false;
+				   },500);
+				  return;
+			  }
+			  var reg = /^[0-9]*[1-9][0-9]*$/;
+			  if(!reg.test(card_count)){
+				  $scope.sendToast.show = true;
+				  $scope.sendToast.info = '数量不合法';
+				  $timeout(function(){
+					$scope.sendToast.show = false;
+				   },500);
+				  return;
+			  };
+          
+          var confirmPopup = $ionicPopup.confirm({
+			   title: '确认框',
+			   template: '您是否确认赠送给'+$scope.sendData.target_actor_id+'玩家?',
+				 buttons: [
+				  { text: '取消' },
+				  {
+					text: '<b>确定</b>',
+					type: 'button-balanced',
+					onTap: function(e) {
+						$http({
+				  method: 'GET',
+				  params: {'target_actor_id':target_actor_id,'card_count':card_count},
+				  url:"<?=UrlUtils::createUrl(['trade/card-rollout']);?>"
+			  }).success(function(data) {
+					  if(data.retCode == 1){
+							alert("请求超时");
+							return;
+					   }else if(data.retCode == 2){
+							alert(data.retMsg);
+							return;
+					   }
+				  $scope.accountInfo.cardcount = data.cardcount;
+				  $scope.sendToast.show = true;
+				  $scope.sendToast.info = '赠送成功';
+				  $timeout(function(){
+					$scope.sendToast.show = false;
+				   },3000);
+			  });
+					  
+					}
+				  }
+				]
+			 });
+
+
+
+          
 
         };
 
@@ -322,7 +348,7 @@ use common\models\UrlUtils;
 			$scope.selectIndex = index;
 		}
 		$scope.pay = function(){
-			alert($scope.selMallItem.money);
+
 			$http({
 			  method: 'GET',
 			  params: {'id':$scope.selMallItem.id,'cardcount':$scope.selMallItem.cardcount,'money':$scope.selMallItem.money,'desc':$scope.selMallItem.desc},
